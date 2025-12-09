@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="../../src/css/style.css">
+    <link rel="stylesheet" href="../../src/assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../src/assets/fontawesome/css/brands.min.css">
+
+</head>
+
+<body>
+    <header class="h-[170px] to-0 left-0 w-full fixed shadow-lg flex flex-col justify-between pb-1 bg-white z-10">
+        <section class="flex justify-between w-full m-auto">
+            <div class="hidden sm:flex justify-between border-b border-gray-300 pb-5 px-5">
+                <div class="">
+                    <label class="" for="#inp">
+                        <input class="" id="inp" type="text" placeholder="Search books">
+                    </label>
+                </div>
+                <div><i class="fa-solid fa-magnifying-glass"></i> </div>
+            </div>
+
+
+            <div class="text-3xl pl-8 sm:pl-0 font-extrabold flex items-center sm:items-start">BOOTIN</div>
+            <div class="h-6 hidden sm:flex">
+                <span class="relative">
+                    <div
+                        class="absolute h-7 w-7 rounded-full bg-red-600 text-white -top-4 -right-4 text-sm  flex justify-center items-center">
+                        3</div>
+                    <i class="fa-regular fa-heart fa-lg "></i>
+                </span>
+                <span class="border border-gray-300 mx-3"></span>
+                <span class="relative">
+                    <div
+                        class="absolute h-7 w-7 rounded-full bg-red-600 text-white -top-4 -right-4 text-sm  flex justify-center items-center">
+                        0</div>
+                    <i class="fa-regular fa-bookmark fa-lg  "></i>
+                </span>
+                <span class="border border-gray-300 mx-3"></span>
+
+                <span>
+                    <i class="fa-solid fa-user fa-lg "></i>
+                </span>
+
+            </div>
+            <a class="sm:hidden" href="#menu">
+                <div class="flex mx-3 h-[100px] w-[100px] shadow justify-center items-center "><i
+                        class="fa-solid fa-list fa-2xl mx-3"></i> </div>
+            </a>
+
+        </section>
+        <section class="hidden container sm:flex justify-center w-full m-auto">
+            <nav class="mx-auto">
+                <ul class="flex gap-3">
+                    <a class="hover:text-[#FF6468] hover:underline" href="../../index.html">Home</a><a
+                        class="hover:text-[#FF6468] hover:underline" href="./shop.html">Shop</a><a
+                        class="hover:text-[#FF6468] hover:underline" href="./post.html">Post</a><a
+                        class="hover:text-[#FF6468] hover:underline" href="./contacts.html">Cntact</a>
+                </ul>
+            </nav>
+        </section>
+        <div id="menu" class="hidden [&:target]:block absolute top-[110%] left-0 w-full h-[300px] bg-white">
+            <nav class="mx-auto">
+                <ul class="flex flex-col gap-3 text-2xl pl-8">
+                    <a class="hover:text-[#FF6468] hover:underline" href="../../index.html">Home</a><a
+                        class="hover:text-[#FF6468] hover:underline" href="./shop.html">Shop</a><a
+                        class="hover:text-[#FF6468] hover:underline" href="./post.html">Post</a><a
+                        class="hover:text-[#FF6468] hover:underline" href="./contacts.html">Cntact</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-[170px] w-full">
+        <section
+            class="presentation h-[18vh] bg-[url('../assets/img/bg.jpg')] bg-cover flex justify-center items-center text-white text-5xl font-bold">
+            Shop
+
+        </section>
+        <section class="container w-full mx-auto my-5">
+            <div class="flex flex-col-reverse lg:flex-row gap-5 py-5">
+                <div class="lg:w-[300px] flex flex-col gap-10">
+                    <div class="border">
+                      <div class="h-10 w-full rounded flex justify-start items-center">
+                        <input placeholder="Search Books..." class="w-full h-10 pl-2" type="text">
+                        <div class="w-10 h-10 bg-[#FF6469] scale-105 text-white flex justify-center items-center"> <i class="fa-solid fa-magnifying-glass"></i> </div>
+                      </div>
+
+                    </div>
+                    
+                    <div class="px-4">
+                        <span class="text-2xl font-bold my-3 ">Catégories</span>
+                        <div class="w-[100px] border-b border-[#FF6468] my-5"></div>
+                        <ul class="flex flex-col gap-4">
+                            <li>Busness (3)</li>
+                            <li>Classic (5)</li>
+                            <li>Drama (4)</li>
+                            <li>For kid (6)</li>
+                            <li>Horror (1)</li>
+                            <li>Loved (23)</li>
+                        </ul>
+                    </div>
+                    <div class="px-4">
+                        <span class="text-2xl font-bold my-3 ">Price</span>
+                        <div class="w-[100px] border-b border-[#FF6468] my-5"></div>
+                        <div class="relative">
+                            <input type="range" min="0" max="100" class="w-[90%]">
+                            <div class="absolute top-[100%] left-0">2000 FCFA</div>
+                            <div class="absolute top-[100%] right-[10%]">50000 FCFA</div>
+
+
+                        </div>
+                    </div>
+                    <div class="px-4">
+                        <span class="text-2xl font-bold my-3 ">Author</span>
+                        <div class="w-[100px] border-b border-[#FF6468] my-5"></div>
+                        <ul class="flex flex-col gap-5">
+                            <li><label for="">
+                                    <input type="checkbox" name="" id="">
+                                    <a href="">Ismael Issa (3)</a>
+                                </label> </li>
+                            <li><label for="">
+                                    <input type="checkbox" name="" id="">
+                                    <a href="">Abdou Moussa (7)</a>
+                                </label> </li>
+                            <li><label for="">
+                                    <input type="checkbox" name="" id="">
+                                    <a href="">Issa Idrissa (7)</a>
+                                </label> </li>
+                            <li><label for="">
+                                    <input type="checkbox" name="" id="">
+                                    <a href="">Bello CS (12)</a>
+                                </label> </li>
+                            <li><label for="">
+                                    <input type="checkbox" name="" id="">
+                                    <a href="">Nana Fourera (12)</a>
+                                </label> </li>
+                            <li><label for="">
+                                    <input type="checkbox" name="" id="">
+                                    <a href="">Samira Issa (20)</a>
+                                </label> </li>
+                        </ul>
+                    </div>
+                    <div class="px-4">
+                        <span class="text-2xl font-bold my-3 ">Tags</span>
+                        <div class="w-[100px] border-b border-[#FF6468] my-5"></div>
+                        <div class="grid grid-cols-3 gap-5">
+                            <div class="h-[50px] border flex justify-center items-center">Classic</div>
+                            <div class="h-[50px] border flex justify-center items-center">Drama</div>
+                            <div class="h-[50px] border flex justify-center items-center">Horror</div>
+                            <div class="h-[50px] border flex justify-center items-center">Men</div>
+                            <div class="h-[50px] border flex justify-center items-center">Trend</div>
+                            <div class="h-[50px] border flex justify-center items-center">Women</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="grow grid sm:grid-cols-2 lg:grid-cols-4 gap-y-20 lg:pt-16">
+                    <div class="flex flex-col items-center">
+                        <img class="h-[300px] sm:h-[250px]" src="../assets/img/liv1.png" alt="">
+                        <div class="text-lg">The book Mark</div>
+                        <div class="text-gray-400">Classic Litterature</div>
+                        <span class="text-[#FF6468] py-2">14 400 FCFA</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img class="h-[300px] sm:h-[250px]" src="../assets/img/liv2.png" alt="">
+                        <div class="text-lg">The book Mark</div>
+                        <div class="text-gray-400">Classic Litterature</div>
+                        <span class="text-[#FF6468] py-2">14 400 FCFA</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img class="h-[300px] sm:h-[250px]" src="../assets/img/liv3.webp" alt="">
+                        <div class="text-lg">The book Mark</div>
+                        <div class="text-gray-400">Classic Litterature</div>
+                        <span class="text-[#FF6468] py-2">14 400 FCFA</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img class="h-[300px] sm:h-[250px]" src="../assets/img/livre1.png" alt="">
+                        <div class="text-lg">The book Mark</div>
+                        <div class="text-gray-400">Classic Litterature</div>
+                        <span class="text-[#FF6468] py-2">14 400 FCFA</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img class="h-[300px] sm:h-[250px]" src="../assets/img/livre2.png" alt="">
+                        <div class="text-lg">The book Mark</div>
+                        <div class="text-gray-400">Classic Litterature</div>
+                        <span class="text-[#FF6468] py-2">14 400 FCFA</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img class="h-[300px] sm:h-[250px]" src="../assets/img/livre3.png" alt="">
+                        <div class="text-lg">The book Mark</div>
+                        <div class="text-gray-400">Classic Litterature</div>
+                        <span class="text-[#FF6468] py-2">14 400 FCFA</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img class="h-[300px] sm:h-[250px]" src="../assets/img/livre4.png" alt="">
+                        <div class="text-lg">The book Mark</div>
+                        <div class="text-gray-400">Classic Litterature</div>
+                        <span class="text-[#FF6468] py-2">14 400 FCFA</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img class="h-[300px] sm:h-[250px]" src="../assets/img/livre5.png" alt="">
+                        <div class="text-lg">The book Mark</div>
+                        <div class="text-gray-400">Classic Litterature</div>
+                        <span class="text-[#FF6468] py-2">14 400 FCFA</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img class="h-[300px] sm:h-[250px]" src="../assets/img/spec1.png" alt="">
+                        <div class="text-lg">The book Mark</div>
+                        <div class="text-gray-400">Classic Litterature</div>
+                        <span class="text-[#FF6468] py-2">14 400 FCFA</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img class="h-[300px] sm:h-[250px]" src="../assets/img/spec2.png" alt="">
+                        <div class="text-lg">The book Mark</div>
+                        <div class="text-gray-400">Classic Litterature</div>
+                        <span class="text-[#FF6468] py-2">14 400 FCFA</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img class="h-[300px] sm:h-[250px]" src="../assets/img/spec3.png" alt="">
+                        <div class="text-lg">The book Mark</div>
+                        <div class="text-gray-400">Classic Litterature</div>
+                        <span class="text-[#FF6468] py-2">14 400 FCFA</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img class="h-[300px] sm:h-[250px]" src="../assets/img/liv1.png" alt="">
+                        <div class="text-lg">The book Mark</div>
+                        <div class="text-gray-400">Classic Litterature</div>
+                        <span class="text-[#FF6468] py-2">14 400 FCFA</span>
+                    </div>
+                    <hr class="sm:col-span-2 lg:col-span-4 text-gray-300">
+
+                </div>
+            </div>
+            <div class="container flex justify-center gap-5 my-[clamp(20px,3vw,100px)]">
+                <div
+                    class="w-[50px] h-[50px] border flex justify-center items-center bg-[#FF6468] text-white -scale-x-y-110">
+                    1</div>
+                <div
+                    class="w-[50px] h-[50px] border flex justify-center items-center hover:bg-[#FF6468] hover:text-white hover:-scale-x-y-110">
+                    2</div>
+                <div
+                    class="w-[50px] h-[50px] border flex justify-center items-center hover:bg-[#FF6468] hover:text-white hover:-scale-x-y-110">
+                    3</div>
+            </div>
+        </section>
+    </main>
+    <footer class="container mt-10 p-10 m-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="flex flex-col  gap-5">
+            <span class="text-2xl font-bold my-3 ">Contacts us</span>
+            <div class="w-[80px] border-b border-[#FF6468] my-5"></div>
+            <div class="flex gap-5 ">
+                <div><i class="fa-solid fa-location-dot text-2xl"></i></div>
+                <div>1775 Walll street 707 <br>Washington DC, USA</div>
+            </div>
+            <div class="flex gap-5 ">
+                <div><i class="fa-solid fa-envelope text-2xl"></i></div>
+                <div>Bookmak@domain.com <br> Suppor@gmail.com</div>
+            </div>
+            <div class="flex gap-5 ">
+                <div><i class="fa-solid fa-phone text-2xl"></i></div>
+                <div>00227-87884455 <br> 00229-3344224</div>
+            </div>
+
+        </div>
+        <div class="flex flex-col  gap-5">
+            <span class="text-2xl font-bold my-3 ">Information</span>
+            <div class="w-[80px] border-b border-[#FF6468] my-5"></div>
+            <div>Contact us</div>
+            <div>Site map</div>
+            <div>Privacy Policy</div>
+            <div>About Us</div>
+            <div>Custummer Service</div>
+
+        </div>
+        <div class="flex flex-col  gap-5">
+            <span class="text-2xl font-bold my-3 ">My Account</span>
+            <div class="w-[80px] border-b border-[#FF6468] my-5"></div>
+            <div>Sign in</div>
+            <div>View cart</div>
+            <div>My Wishlist</div>
+            <div>Track My Order</div>
+            <div>Help</div>
+
+        </div>
+        <div class="flex flex-col  gap-5">
+            <span class="text-2xl font-bold my-3 ">Instagram</span>
+            <div class="w-[80px] border-b border-[#FF6468] my-5"></div>
+            <div class="grid grid-cols-3 gap-2">
+                <img class="w-[100px]" src="../assets/img/ins1.png" alt="">
+                <img class="w-[100px]" src="../assets/img/ins2.png" alt="">
+                <img class="w-[100px]" src="../assets/img/ins3.png" alt="">
+            </div>
+            <div class="text-[#FF6468]">7 Days 4 week from 2004</div>
+            <div class="flex text-3xl">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-solid fa-paint-roller"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
