@@ -8,7 +8,9 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-600: oklch(57.7% 0.245 27.325);
-    --color-amber-300: oklch(87.9% 0.169 91.605);
+
+    --color-amber-400: oklch(82.8% 0.189 84.429);
+    --color-amber-700: oklch(55.5% 0.163 48.998);
     --color-green-400: oklch(79.2% 0.209 151.711);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
@@ -33,7 +35,7 @@
     --text-5xl--line-height: 1;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
-    --radius-lg: 0.5rem;
+    --font-weight-black: 900;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -324,6 +326,9 @@
   .min-h-\[60vh\] {
     min-height: 60vh;
   }
+  .w-1\/4 {
+    width: calc(1/4 * 100%);
+  }
   .w-7 {
     width: calc(var(--spacing) * 7);
   }
@@ -401,6 +406,9 @@
   }
   .items-center {
     align-items: center;
+  }
+  .items-end {
+    align-items: flex-end;
   }
   .items-start {
     align-items: flex-start;
@@ -569,6 +577,12 @@
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
   }
+  .pb-\[30px\] {
+    padding-bottom: 30px;
+  }
+  .pb-\[100px\] {
+    padding-bottom: 100px;
+  }
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
   }
@@ -608,6 +622,10 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -660,13 +678,14 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
-  .duration-107 {
-    --tw-duration: 107ms;
-    transition-duration: 107ms;
+
+  .duration-100 {
+    --tw-duration: 100ms;
+    transition-duration: 100ms;
   }
-  .duration-113 {
-    --tw-duration: 113ms;
-    transition-duration: 113ms;
+  .duration-103 {
+    --tw-duration: 103ms;
+    transition-duration: 103ms;
   }
   .duration-300 {
     --tw-duration: 300ms;
@@ -764,6 +783,12 @@
   .sm\:col-span-4 {
     @media (width >= 40rem) {
       grid-column: span 4 / span 4;
+    }
+  }
+
+  .sm\:m-auto {
+    @media (width >= 40rem) {
+      margin: auto;
     }
   }
   .sm\:flex {
